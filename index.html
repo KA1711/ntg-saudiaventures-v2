@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://framerusercontent.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <style>
     @font-face {
       font-family: "Roobert PRO";
@@ -747,6 +748,10 @@
       max-width: 560px;
     }
 
+    .contrast-card .body-copy {
+      margin-top: 24px;
+    }
+
     .category-side {
       display: grid;
       gap: 12px;
@@ -1059,7 +1064,7 @@
         <aside class="section-label reveal" data-index="01">Positioning</aside>
         <div class="copy-stack reveal">
           <span class="kicker">Co-company builder</span>
-          <h2 id="who">A shared infrastructure layer between two markets.</h2>
+          <h2 id="who">From concept to operating reality.</h2>
           <p class="lead">NTG Ventures × SaudiaVentures is a co-company builder — shared technical, commercial, and operational infrastructure that turns a market opportunity into a working platform.</p>
           <p class="body-copy">NTG Ventures brings the German engineering discipline and systems architecture. SaudiaVentures is the Saudi and GCC-facing platform. Together, we take a thesis from concept to operating reality.</p>
         </div>
@@ -1114,7 +1119,7 @@
           </article>
           <article class="card reveal accent">
             <span class="label">The only thing that matters</span>
-            <strong class="value">Execution</strong>
+            <strong class="value" style="font-size: clamp(28px, 3.6vw, 52px)">Execution</strong>
           </article>
         </div>
       </div>
@@ -1157,7 +1162,6 @@
                 <span class="mono">Common pattern</span>
                 <h3>Idea Alone</h3>
               </div>
-              <span class="mono">Illustrative state</span>
               <div class="pipeline" aria-label="Idea alone — system completeness">
                 <div class="pipe-row"><span>Product</span><div class="pipe"><span style="--w: 28%"></span></div></div>
                 <div class="pipe-row"><span>Data</span><div class="pipe"><span style="--w: 22%"></span></div></div>
@@ -1169,9 +1173,8 @@
             <article class="contrast-card good">
               <div>
                 <span class="mono">Required architecture</span>
-                <h3>Complete System</h3>
+                <h3>Full System</h3>
               </div>
-              <span class="mono">Illustrative state</span>
               <div class="pipeline" aria-label="Complete system — system completeness">
                 <div class="pipe-row"><span>Product</span><div class="pipe"><span style="--w: 92%"></span></div></div>
                 <div class="pipe-row"><span>Data</span><div class="pipe"><span style="--w: 88%"></span></div></div>
@@ -1411,7 +1414,13 @@
     </section>
   </main>
 
-  <footer class="footer">NTG Ventures × SaudiaVentures / Nada Technologies UG (haftungsbeschränkt) / Hamburg, Germany / © 2026</footer>
+  <footer class="footer" style="flex-direction: column; gap: 8px; text-align: center">
+    <span>NTG Ventures × SaudiaVentures / © 2026</span>
+    <span>Nada Technologies UG (haftungsbeschränkt)</span>
+    <span>Poststraße 33, 20354 Hamburg, Germany</span>
+    <span>Geschäftsführer: Karim Ahmed</span>
+    <span>Amtsgericht Hamburg · HRB 143470</span>
+  </footer>
 
   <script>
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
